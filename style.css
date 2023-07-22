@@ -15,11 +15,22 @@ body {
   }
   
   .container {
-    max-width: 400px;
+    max-width: 90vh;
+    margin: 0 auto;
+        background-color: rgb(52,52,74);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+  }
+  .container3{
+    max-width: 100vh;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
-    background-color: rgb(52,52,74);
+    /* border: 1px solid #ccc; */
+    background-color: rgb(0, 0, 3);
     border-radius: 13px;
     display: flex;
     flex-direction: column;
@@ -27,57 +38,131 @@ body {
     
     
   }
+  .container2 {
+    max-width: 100vh;
+    margin-top: 15px;
+    margin-left: 35vw;
+    
+    
+    padding: 10px;
+        background-color: rgb(0, 0, 3);
+    border-radius: 13px;
+    display: flex;
+    flex-direction: grid;
+    align-items: center;
+    
+    
+  }
   
   .timer-input {
     display: flex;
+    
     gap: 10px;
     align-items: center;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 
   }
   
   .timer-input input {
-    width: 60px;
-    padding: 5px;
+    width: 40px;
+    background-color: rgb(52,52,74);;
+    color: #fff;
+    padding: 5px;   
+    align-itens: center;
   }
   
   .timer-input button {
-    padding: 5px 10px;
+    padding: 5px 10x;
     cursor: pointer;
   }
+
+  div
+
+  
   
   .active-timers {
+    /* display: grid;
+    gap: 10px; */
+
     display: grid;
     gap: 10px;
+    
+    align-items: center;
+    margin-bottom: 20px;
   
   }
   
   .timer {
     display: flex;
+    width: 90vh;
+    margin:0 auto ;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    background-color: #ccc;
-    border:2px solid palevioletred;
+    background-color: rgb(52,52,74);;
+    border-radius: 10px;
+    
+  }
+  .timer-text {
+    color: #fff;
+  }
+  .timer-text:hover {
+    color: #000;
   }
   
   .timer-ended {
-    background-color: #f8d7da;
+    
     background-color: #F0F757;
   }
   
   button {
-    padding: 5px 10px;
+    padding: 5px;
     cursor: pointer;
+    
+    
   }
+  button:hover {background-color: #0d6fc4}
+
+
   #start-timer-btn{
-    border-radius: 12px;
-    width: 120px;
-    background-color: #F0F757;
+    border-radius: 15px;
+    width: 80px;
+    margin-left: 17vh;
+    background-color: #fff;
+    text-align: center;
   }
+  #start-timer-btn:hover {background-color: #F0F757}
+
   #deletebtn{
     border-radius: 12px;
-    width: 120px;
+    width: 17vh;
+    margin-right: 20px;
+    background-color: #F0F757
+    color: #000;
+
   }
+  #deletebtn:hover {
+    background-color: #F0F757
+    
+}
+
+
+  .current-time-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 60vh;
+    height: 60px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: #39393e;
+    color: white;
+    border: none;
+    font-weight: 500px;
+    font-size: 24px;
+  }
+  .timer-remaining {
+    font-size: 64px;
+    margin-right: 10px;
+    color: white;
+  }
+  
