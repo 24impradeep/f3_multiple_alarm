@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const activeTimers = [];
   
@@ -39,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else {
           clearInterval(timer.intervalId);
           timerElement.classList.add("timer-ended");
-          timerTextElement.innerHTML = "Time's up!";
+          timerTextElement.innerHTML = "Timer Is Up!";
           playAudioAlert();
         }
       }, 1000);
